@@ -7,7 +7,7 @@
             <h1 class="text-center pt-6 font-weight-light display-2">Plans</h1>
             <v-divider class="my-6"></v-divider>
             <v-row class="text-center">
-              <v-col class="col-12 col-sm-6 col-md-6">
+              <v-col class="col-12 col-sm-4 col-md-4">
                 <div class="flex-center">
                   <v-card-text>
                     <div class="flex-center">
@@ -31,7 +31,7 @@
                 </div>
                 <v-divider class="mx-4" v-if="!this.$vuetify.breakpoint.smAndUp"></v-divider>
               </v-col>
-              <v-col class="col-12 col-sm-6 col-md-6">
+              <v-col class="col-12 col-sm-4 col-md-4">
                 <div class="flex-center">
                   <v-card-text>
                     <div class="flex-center">
@@ -41,7 +41,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="grey--text text--darken-1 text-uppercase text-h5 my-2">Premium (+)</div>
+                    <div class="grey--text text--darken-1 text-uppercase text-h5 my-2">Premium 1 month</div>
                     <v-divider class="mt-6 mb-3"/>
                     <div class="text-uppercase grey--text text--darken-1">All basic options</div>
                     <v-divider class="my-3"/>
@@ -49,7 +49,29 @@
                     <v-divider class="my-3"/>
                     <div class="text-uppercase grey--text text--darken-1">No ads</div>
                     <v-divider class="my-3"/>
-                    <div class="text-h4 mt-6 blue--text">5.99$/month</div>
+                    <div class="text-h4 mt-6 blue--text">7.99$/month</div>
+                  </v-card-text>
+                </div>
+              </v-col>
+              <v-col class="col-12 col-sm-4 col-md-4">
+                <div class="flex-center">
+                  <v-card-text>
+                    <div class="flex-center">
+                      <div class="circle1">
+                        <div class="circle2">
+                          <v-img src="~@/assets/img/cocktails premium111.png"></v-img>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grey--text text--darken-1 text-uppercase text-h5 my-2">Premium 3 months</div>
+                    <v-divider class="mt-6 mb-3"/>
+                    <div class="text-uppercase grey--text text--darken-1">All basic options</div>
+                    <v-divider class="my-3"/>
+                    <div class="text-uppercase grey--text text--darken-1">All cocktails</div>
+                    <v-divider class="my-3"/>
+                    <div class="text-uppercase grey--text text--darken-1">No ads</div>
+                    <v-divider class="my-3"/>
+                    <div class="text-h4 mt-6 blue--text">19.99$/3 months</div>
                   </v-card-text>
                 </div>
               </v-col>
