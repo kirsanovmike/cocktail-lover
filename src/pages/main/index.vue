@@ -1,29 +1,33 @@
 <template>
   <v-container fluid class="pa-0">
-    <navigation :color="color" :flat="flat" />
-    <v-main class="pt-0">
-      <home />
-      <about />
-      <!-- <download /> -->
-      <pricing />
-      <contact />
-    </v-main>
-    <v-scale-transition>
-      <v-btn
-        fab
-        v-show="fab"
-        v-scroll="onScroll"
-        dark
-        fixed
-        bottom
-        right
-        color="secondary"
-        @click="toTop"
-      >
-        <v-icon>mdi-arrow-up</v-icon>
-      </v-btn>
-    </v-scale-transition>
-    <foote />
+    <template v-if="noDocument">
+      <navigation :color="color" :flat="flat" />
+      <v-main class="pt-0">
+        <home />
+        <about />
+        <!-- <download /> -->
+        <pricing />
+        <contact />
+      </v-main>
+      <v-scale-transition>
+        <v-btn
+          fab
+          v-show="fab"
+          v-scroll="onScroll"
+          dark
+          fixed
+          bottom
+          right
+          color="secondary"
+          @click="toTop"
+        >
+          <v-icon>mdi-arrow-up</v-icon>
+        </v-btn>
+      </v-scale-transition>
+      <foote />
+    </template>
+    <terms-and-conditions v-if="showTerms" />
+    <privacy-policy v-else-if="showPrivacy" />
   </v-container>
 </template>
 
@@ -44,6 +48,8 @@ import about from "@/components/AboutSection";
 // import download from "./components/DownloadSection";
 import pricing from "@/components/PricingSection";
 import contact from "@/components/ContactSection";
+import TermsAndConditions from "@/components/TermsAndConditions.vue";
+import PrivacyPolicy from "@/components/PrivacyPolicy.vue";
 
 export default {
   name: "App",
@@ -56,6 +62,8 @@ export default {
     // download,
     pricing,
     contact,
+    TermsAndConditions,
+    PrivacyPolicy,
   },
 
   data: () => ({
@@ -63,6 +71,20 @@ export default {
     color: "",
     flat: null,
   }),
+
+  computed: {
+    noDocument() {
+      return (
+        this.$route.query.document === "" || this.$route.query.document == null
+      );
+    },
+    showPrivacy() {
+      return this.$route.query.document === "privacy-policy";
+    },
+    showTerms() {
+      return this.$route.query.document === "terms-and-conditions";
+    },
+  },
 
   created() {
     const top = window.pageYOffset || 0;
