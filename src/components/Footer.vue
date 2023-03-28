@@ -27,28 +27,23 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        <!-- <v-btn
-          class="ma-2"
-          outlined
-          color="white"
-          @click="$router.push({ name: 'privacy-policy' })"
-        >
-          Privacy Policy
-        </v-btn> -->
         <v-btn class="ma-2" outlined color="white" @click="openPrivacyPolicy">
+          Privacy Policy
+        </v-btn>
+        <!-- <v-btn class="ma-2" outlined color="white" @click="openPrivacyPolicy">
           Privacy Policy
         </v-btn>
         <v-btn class="ma-2" outlined color="white" @click="openTermsAndConditions">
           Terms & Conditions
-        </v-btn>
-        <!-- <v-btn
+        </v-btn> -->
+        <v-btn
           class="ma-2"
           outlined
           color="white"
-          @click="$router.push({ name: 'terms-and-conditions' })"
+          @click="openTermsAndConditions"
         >
           Terms & Conditions
-        </v-btn> -->
+        </v-btn>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -84,11 +79,11 @@ export default {
   }),
   methods: {
     openPrivacyPolicy() {
-      window.open("./../privacypolicy/file//PrivacyPolicy.pdf");
+      window.open("/terms-and-conditions", "_blank").focus();
     },
     openTermsAndConditions() {
-      window.open("./../termsandconditions/file/TermsAndConditions.pdf");
-    }
+      window.open("/privacy-policy", "_blank").focus();
+    },
   },
 };
 </script>
