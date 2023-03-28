@@ -23,6 +23,33 @@
       <v-card-text class="white--text">
         {{ new Date().getFullYear() }} — <strong>Cocktail Lover WEB</strong>
       </v-card-text>
+
+      <v-divider></v-divider>
+
+      <v-card-text class="white--text">
+        <!-- <v-btn
+          class="ma-2"
+          outlined
+          color="white"
+          @click="$router.push({ name: 'privacy-policy' })"
+        >
+          Privacy Policy
+        </v-btn> -->
+        <v-btn class="ma-2" outlined color="white" @click="openPrivacyPolicy">
+          Privacy Policy
+        </v-btn>
+        <v-btn class="ma-2" outlined color="white" @click="openTermsAndConditions">
+          Terms & Conditions
+        </v-btn>
+        <!-- <v-btn
+          class="ma-2"
+          outlined
+          color="white"
+          @click="$router.push({ name: 'terms-and-conditions' })"
+        >
+          Terms & Conditions
+        </v-btn> -->
+      </v-card-text>
     </v-card>
   </v-footer>
 </template>
@@ -55,5 +82,13 @@ export default {
       },
     ],
   }),
+  methods: {
+    openPrivacyPolicy() {
+      window.open("./../privacypolicy/file//PrivacyPolicy.pdf");
+    },
+    openTermsAndConditions() {
+      window.open("./../termsandconditions/file/TermsAndConditions.pdf");
+    }
+  },
 };
 </script>
