@@ -79,10 +79,10 @@ export default {
   }),
   methods: {
     openPrivacyPolicy() {
-      window.open("/terms-and-conditions", "_blank").focus();
+      window.open(`${process.env.NODE_ENV === "production" ? "/cocktail-lover/" : "/"}terms-and-conditions`, "_blank").focus();
     },
     openTermsAndConditions() {
-      window.open("/privacy-policy", "_blank").focus();
+      window.open(`${process.env.NODE_ENV === "production" ? "/cocktail-lover/" : "/"}privacy-policy`, "_blank").focus();
     },
   },
 };

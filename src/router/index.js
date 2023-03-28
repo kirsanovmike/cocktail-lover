@@ -6,16 +6,20 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
+    redirect: { name: "home" },
+  },
+  {
+    path: "/cocktail-lover/",
     name: "home",
     component: () => import("@/pages/main/index.vue"),
   },
   {
-    path: "/privacy-policy",
+    path: "/cocktail-lover/privacy-policy",
     name: "privacy-policy",
     component: () => import("@/pages/privacypolicy/index.vue"),
   },
   {
-    path: "/terms-and-conditions",
+    path: "/cocktail-lover/terms-and-conditions",
     name: "terms-and-conditions",
     component: () => import("@/pages/termsandconditions/index.vue"),
   },
