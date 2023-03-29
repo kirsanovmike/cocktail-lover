@@ -20,7 +20,7 @@
                 </a>
               </h3>
               <h3 class="font-weight-light mt-3">
-                Telegram:
+                We in telegram:
                 <a href="https://t.me/cocktaillover" target="_blank">
                   Cocktail Lover Telegram
                 </a>
