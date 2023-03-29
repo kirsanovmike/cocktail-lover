@@ -7,7 +7,7 @@
             <h1 class="text-center pt-6 font-weight-light display-2">Plans</h1>
             <v-divider class="my-6"></v-divider>
             <v-row class="text-center">
-              <v-col class="col-12 col-sm-4 col-md-4">
+              <v-col class="col-12 col-sm-3 col-md-3">
                 <div class="flex-center">
                   <v-card-text>
                     <div class="flex-center">
@@ -17,61 +17,136 @@
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Basic (Free)</div>
-                    <v-divider class="mt-6 mb-3"/>
-                    <div class="text-uppercase grey--text">Several free cocktails</div>
-                    <v-divider class="my-3"/>
-                    <div class="text-uppercase grey--text">Serving by quantity</div>
-                    <v-divider class="my-3"/>
-                    <div class="text-uppercase grey--text">Description of the equipment</div>
-                    <v-divider class="my-3"/>
-                    <div class="text-uppercase text-h4 mt-6 blue--text">0.00$</div>
+                    <div class="text--disabled text-uppercase text-h5 my-2">
+                      Basic (Free)
+                    </div>
+                    <v-divider class="mt-6 mb-3" />
+                    <div class="text-uppercase grey--text">
+                      Several free cocktails
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-uppercase grey--text">
+                      Serving by quantity
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-uppercase grey--text">
+                      Description of the equipment
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-uppercase text-h4 mt-6 blue--text">
+                      0.00$
+                    </div>
                   </v-card-text>
-                  <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.smAndUp"></v-divider>
+                  <v-divider
+                    style="margin-right: -23px"
+                    vertical
+                    v-if="this.$vuetify.breakpoint.smAndUp"
+                  ></v-divider>
                 </div>
-                <v-divider class="mx-4" v-if="!this.$vuetify.breakpoint.smAndUp"></v-divider>
+                <v-divider
+                  class="mx-4"
+                  v-if="!this.$vuetify.breakpoint.smAndUp"
+                ></v-divider>
               </v-col>
-              <v-col class="col-12 col-sm-4 col-md-4">
+              <v-col class="col-12 col-sm-3 col-md-3">
                 <div class="flex-center">
                   <v-card-text>
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/cocktails premium111.png"></v-img>
+                          <v-img
+                            src="~@/assets/img/logo.png"
+                          ></v-img>
                         </div>
                       </div>
                     </div>
-                    <div class="grey--text text--darken-1 text-uppercase text-h5 my-2">Premium 1 month</div>
-                    <v-divider class="mt-6 mb-3"/>
-                    <div class="text-uppercase grey--text text--darken-1">All basic options</div>
-                    <v-divider class="my-3"/>
-                    <div class="text-uppercase grey--text text--darken-1">All cocktails</div>
-                    <v-divider class="my-3"/>
-                    <div class="text-uppercase grey--text text--darken-1">No ads</div>
-                    <v-divider class="my-3"/>
-                    <div class="text-h4 mt-6 blue--text">7.99$/month</div>
+                    <div
+                      class="grey--text text--darken-1 text-uppercase text-h5 my-2"
+                    >
+                      Premium 1 month
+                    </div>
+                    <v-divider class="mt-6 mb-3" />
+                    <div class="text-uppercase grey--text text--darken-1">
+                      All basic options
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-uppercase grey--text text--darken-1">
+                      All cocktails
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-uppercase grey--text text--darken-1">
+                      No ads
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-h4 mt-6 blue--text">1.99$/week</div>
                   </v-card-text>
                 </div>
               </v-col>
-              <v-col class="col-12 col-sm-4 col-md-4">
+              <v-col class="col-12 col-sm-3 col-md-3">
                 <div class="flex-center">
                   <v-card-text>
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/cocktails premium111.png"></v-img>
+                          <v-img
+                            src="~@/assets/img/logo.png"
+                          ></v-img>
                         </div>
                       </div>
                     </div>
-                    <div class="grey--text text--darken-1 text-uppercase text-h5 my-2">Premium 3 months</div>
-                    <v-divider class="mt-6 mb-3"/>
-                    <div class="text-uppercase grey--text text--darken-1">All basic options</div>
-                    <v-divider class="my-3"/>
-                    <div class="text-uppercase grey--text text--darken-1">All cocktails</div>
-                    <v-divider class="my-3"/>
-                    <div class="text-uppercase grey--text text--darken-1">No ads</div>
-                    <v-divider class="my-3"/>
-                    <div class="text-h4 mt-6 blue--text">19.99$/3 months</div>
+                    <div
+                      class="grey--text text--darken-1 text-uppercase text-h5 my-2"
+                    >
+                      Premium MONTHS
+                    </div>
+                    <v-divider class="mt-6 mb-3" />
+                    <div class="text-uppercase grey--text text--darken-1">
+                      All basic options
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-uppercase grey--text text--darken-1">
+                      All cocktails
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-uppercase grey--text text--darken-1">
+                      No ads
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-h4 mt-6 blue--text">3.99$/month</div>
+                  </v-card-text>
+                </div>
+              </v-col>
+              <v-col class="col-12 col-sm-3 col-md-3">
+                <div class="flex-center">
+                  <v-card-text>
+                    <div class="flex-center">
+                      <div class="circle1">
+                        <div class="circle2">
+                          <v-img
+                            src="~@/assets/img/logo.png"
+                          ></v-img>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="grey--text text--darken-1 text-uppercase text-h5 my-2"
+                    >
+                      Premium YEAR
+                    </div>
+                    <v-divider class="mt-6 mb-3" />
+                    <div class="text-uppercase grey--text text--darken-1">
+                      All basic options
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-uppercase grey--text text--darken-1">
+                      All cocktails
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-uppercase grey--text text--darken-1">
+                      No ads
+                    </div>
+                    <v-divider class="my-3" />
+                    <div class="text-h4 mt-6 blue--text">34.99$/year</div>
                   </v-card-text>
                 </div>
               </v-col>
@@ -92,13 +167,13 @@
         />
       </svg> -->
       <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-          preserveAspectRatio="none"
-          fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+        fill="currentColor"
       >
         <path
-            d="M0,64L80,90.7C160,117,320,171,480,181.3C640,192,800,160,960,138.7C1120,117,1280,107,1360,101.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          d="M0,64L80,90.7C160,117,320,171,480,181.3C640,192,800,160,960,138.7C1120,117,1280,107,1360,101.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
         ></path>
       </svg>
     </div>
@@ -313,11 +388,11 @@ export default {
   }),
   computed: {
     size() {
-      const size = {md: "large", xl: "x-large"}[
-          this.$vuetify.breakpoint.name
-          ];
-      return size ? {[size]: true} : {};
-    }
+      const size = { md: "large", xl: "x-large" }[
+        this.$vuetify.breakpoint.name
+      ];
+      return size ? { [size]: true } : {};
+    },
   },
 };
 </script>

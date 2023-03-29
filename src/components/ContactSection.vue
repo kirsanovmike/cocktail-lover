@@ -7,13 +7,23 @@
             <v-col cols="12">
               <h1 class="font-weight-light display-1">Contact us</h1>
               <h3 class="font-weight-light mt-3">
-                We will be glad to hear your feedback and suggestions on the work of the service. Best regards, the cocktails maker team..
+                We will be glad to hear your feedback and suggestions on the
+                work of the service. Best regards, the cocktails maker team..
               </h3>
               <h3 class="font-weight-light mt-3">
                 Fill out the feedback by email.
               </h3>
               <h3 class="font-weight-light mt-3">
-                Email: cocktailsmaker@gmail.com
+                Email:
+                <a href="mailto: cocktaillover12@gmail.com">
+                  cocktaillover12@gmail.com
+                </a>
+              </h3>
+              <h3 class="font-weight-light mt-3">
+                Telegram:
+                <a href="https://t.me/cocktaillover" target="_blank">
+                  Cocktail Lover Telegram
+                </a>
               </h3>
             </v-col>
           </v-row>
@@ -21,23 +31,19 @@
       </v-row>
     </v-container>
     <div class="svg-border-waves text-white">
-      <v-img src="~@/assets/img/borderWavesBlue.svg"/>
+      <v-img src="~@/assets/img/borderWavesBlue.svg" />
     </div>
     <v-snackbar
-        v-model="snackbar.enabled"
-        timeout="3000"
-        right
-        top
-        :color="snackbar.color"
+      v-model="snackbar.enabled"
+      timeout="3000"
+      right
+      top
+      :color="snackbar.color"
     >
       {{ snackbar.text }}
 
       <template v-slot:action="{ attrs }">
-        <v-btn
-            text
-            v-bind="attrs"
-            @click="snackbar.enabled = false"
-        >
+        <v-btn text v-bind="attrs" @click="snackbar.enabled = false">
           Fechar
         </v-btn>
       </template>
@@ -58,7 +64,6 @@
   width: 100%;
   overflow: hidden;
 }
-
 </style>
 
 <script>
@@ -69,27 +74,20 @@ export default {
     icons: ["fa-facebook", "fa-twitter", "fa-linkedin", "fa-instagram"],
     valid: true,
     name: "",
-    nameRules: [
-      (v) => !!v || "Name is required",
-    ],
+    nameRules: [(v) => !!v || "Name is required"],
     email: "",
-    emailRules: [
-      (v) => !!v || "Email is required",
-    ],
+    emailRules: [(v) => !!v || "Email is required"],
     textArea: "",
-    textAreaRules: [
-      (v) => !!v || "Message is required",
-    ],
+    textAreaRules: [(v) => !!v || "Message is required"],
     lazy: false,
     snackbar: {
       enabled: false,
-      text: '',
-      color: ''
-    }
+      text: "",
+      color: "",
+    },
   }),
   methods: {
-    submit() {
-    }
-  }
+    submit() {},
+  },
 };
 </script>

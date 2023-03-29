@@ -79,12 +79,24 @@ export default {
   }),
   methods: {
     openPrivacyPolicy() {
-      // window.open(`${process.env.NODE_ENV === "production" ? "/cocktail-lover/" : "/"}privacy-policy`, "_blank").focus();
-      this.$router.replace({ query: { document: "privacy-policy" } });
+      window
+        .open(
+          `${
+            process.env.NODE_ENV === "production" ? "/cocktail-lover/" : "/"
+          }?document=privacy-policy`,
+          "_blank"
+        )
+        .focus();
     },
     openTermsAndConditions() {
-      // window.open(`${process.env.NODE_ENV === "production" ? "/cocktail-lover/" : "/"}terms-and-conditions`, "_blank").focus();
-      this.$router.replace({ query: { document: "terms-and-conditions" } });
+      window
+        .open(
+          `${
+            process.env.NODE_ENV === "production" ? "/cocktail-lover/" : "/"
+          }?document=terms-and-conditions`,
+          "_blank"
+        )
+        .focus();
     },
   },
 };
